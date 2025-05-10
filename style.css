@@ -1,0 +1,35 @@
+/* Efek transisi masuk */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+div[data-testid="stVerticalBlock"] {
+    animation: fadeIn 1s ease-in;
+}
+
+body {
+    background-color: #e6f2e6;
+    color: #003300;
+    font-family: 'Arial', sans-serif;
+}
+
+h1, h2, h3 {
+    color: #006600;
+}
+
+.stButton > button {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.stButton > button:hover {
+    background-color: #45a049;
+}
+
+.sidebar .sidebar-content {
+    background-color: #d9f2d9;
+}
